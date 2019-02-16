@@ -12,6 +12,8 @@ import { ConnexionComponent } from './auth/connexion/connexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { FormulairepatientComponent } from './auth/formulaire/formulairepatient/formulairepatient.component';
 import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/formulairemedecin.component';
+import { AccueilpatientComponent } from './accueilpatient/accueilpatient.component';
+import { RecherchemedecinComponent } from './accueilpatient/recherchemedecin/recherchemedecin.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/
     InscriptionComponent,
     FormulairepatientComponent,
     FormulairemedecinComponent,
+    AccueilpatientComponent,
+    RecherchemedecinComponent,
 
   ],
   imports: [
