@@ -4,23 +4,29 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { AproposComponent } from './accueil/apropos/apropos.component';
+import { VideoComponent } from './accueil/video/video.component';
 import { FormulaireComponent } from './auth/formulaire/formulaire.component';
 import { ConnexionComponent } from './auth/connexion/connexion.component';
-import { VideoComponent } from './accueil/video/video.component';
-import { AproposComponent } from './accueil/apropos/apropos.component';
 import { InscriptionComponent } from './inscription/inscription.component';
-import { AccueilComponent } from './accueil/accueil.component';
+import { FormulairepatientComponent } from './auth/formulaire/formulairepatient/formulairepatient.component';
+import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/formulairemedecin.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    AccueilComponent,
+    AproposComponent,
+    VideoComponent,
     FormulaireComponent,
     ConnexionComponent,
-    VideoComponent,
-    AproposComponent,
     InscriptionComponent,
-    AccueilComponent
+    FormulairepatientComponent,
+    FormulairemedecinComponent,
+
   ],
   imports: [
     BrowserModule,
