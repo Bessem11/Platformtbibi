@@ -7,7 +7,8 @@ import {FormulairepatientComponent} from './auth/formulaire/formulairepatient/fo
 
 
 const routes: Routes = [{path: 'accueil' , component: AccueilComponent },{path: 'inscription', component: InscriptionComponent },
-  {path: 'formulairepatient', component: FormulairepatientComponent },{path: 'formulairemedecin', component: FormulairemedecinComponent }];
+  {path: 'formulairepatient', component: FormulairepatientComponent }, {path: 'formulairemedecin', component: FormulairemedecinComponent },
+  {path: '', component: AccueilComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

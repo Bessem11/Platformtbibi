@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { ConnexionComponent } from './auth/connexion/connexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { FormulairepatientComponent } from './auth/formulaire/formulairepatient/formulairepatient.component';
 import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/formulairemedecin.component';
+import {AuthService} from './services/auth.service';
 
 
 @NgModule({
@@ -30,9 +32,11 @@ import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

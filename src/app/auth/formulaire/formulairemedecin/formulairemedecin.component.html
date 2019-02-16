@@ -20,28 +20,28 @@
         </ul>
 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <h3 class="register-heading">Medecin</h3>
-  <form>
+  <form  >
     <div class="row register-form">
       <div class="col-md-6">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Nom *" value="" name="Nom" required /><span>{{name}}</span>
+          <input type="text" class="form-control" placeholder="Nom *" value="" name="Nom" required [(ngModel)]="nom" />
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Prenom *" value="" name="Prenom" required  />
+          <input type="text" class="form-control" placeholder="Prenom *" value="" name="Prenom" required [(ngModel)]="prenom"  />
         </div>
 
         <div class="form-group">
-          <input type="password" class="form-control" placeholder="mot de passe *" value="" name="password" id="password"  required  />
+          <input type="password" class="form-control" placeholder="mot de passe *" value="" name="passwrod" id="password" [(ngModel)]="motdepasse" required />
         </div>
 
         <div class="form-group">
-          <input type="password" class="form-control"  placeholder="Confirm votre mot de passe *" value="" name="confirmpassword"   id="confirmpassword"  required />
-          <span id="confmdp"></span>
+          <input type="password" class="form-control"  placeholder="Confirm votre mot de passe *" value="" name="confirmpassword"   id="confirmpassword" [ngClass]="{'err':isauth==='true'}"  [(ngModel)]="confirmemotdepasse" (blur)="Onverif()" required />
+          <span style="color: red">{{error}}</span>
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Num CIN *" value="" name="cin" required />
+          <input type="text" class="form-control" placeholder="Num CIN *" value="" name="cin" required [(ngModel)]="cin" />
         </div>
 
         <div class="form-group">
@@ -59,10 +59,10 @@
       </div>
       <div class="col-md-6">
         <div class="form-group">
-          <input type="email" class="form-control" placeholder="Your Email *" value="" name="email"  required />
+          <input type="email" class="form-control" placeholder="Your Email *" value="" name="email" [(ngModel)]="email" required />
         </div>
         <div class="form-group">
-          <select class="form-control" required >
+          <select class="form-control" required  >
             <option class="hidden" value=""  >selectionner votre gouvernat</option>
             <option value=" Beja">      Beja </option>
             <option value="Ben Arous">   Ben Arous </option>
@@ -90,18 +90,19 @@
           </select>
         </div>
         <div class="form-group">
-          <input type="text"  maxlength="8" minlength="8"  class="form-control"  placeholder="Telephone *" value="" name="telephone" required  />
+          <input type="text"  maxlength="8" minlength="8"  class="form-control"  placeholder="Telephone *" value="" name="telephone" required  [(ngModel)]="telephone" />
         </div>
         <div class="form-group">
-          <input type="text" class="form-control"  placeholder="Specialite *" value="" name="specialite" required  />
+          <input type="text" class="form-control"  placeholder="Specialite *" value="" name="specialite" required [(ngModel)]="specialite"  />
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control"  placeholder="Prix visite *" value="" name="prix" required  />
+          <input type="text" class="form-control"  placeholder="Prix visite *" value="" name="prix" required  [(ngModel)]="prix" />
         </div>
+        <span style="color: red">{{error1}}</span>
 
-        <input type="submit" class="btnRegister"  value="Register">
-        <a > <button type="button" class="btnRegister">Login</button></a>
+        <a> <button type="submit" class="btnRegister" (click)="Onsubmit()">Registre</button></a>
+        <a > <button type="button" class="btnRegister" routerLink="/accueil">Login</button></a>
       </div>
     </div>
   </form>
