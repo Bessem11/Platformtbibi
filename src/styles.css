@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.bg
+{
+
+  background-image: url("https://image.freepik.com/photos-gratuite/jeune-medecin-gesticulant-pouce-air_23-2147896902.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height:100vh;  /* responsive height */
+
+
+}
