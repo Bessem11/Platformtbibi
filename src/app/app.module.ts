@@ -12,6 +12,12 @@ import { ConnexionComponent } from './auth/connexion/connexion.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { FormulairepatientComponent } from './auth/formulaire/formulairepatient/formulairepatient.component';
 import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/formulairemedecin.component';
+import {AccueilpatientComponent} from './accueilpatient/accueilpatient.component';
+import {NavbarpatientComponent} from './accueilpatient/navbarpatient/navbarpatient.component';
+import {BaspageComponent} from './accueilpatient/baspage/baspage.component';
+import {NumberComponent} from './number/number.component';
+import {RecherchemedecinComponent} from './accueilpatient/recherchemedecin/recherchemedecin.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -26,11 +32,17 @@ import { FormulairemedecinComponent } from './auth/formulaire/formulairemedecin/
     InscriptionComponent,
     FormulairepatientComponent,
     FormulairemedecinComponent,
+    AccueilpatientComponent,
+    NavbarpatientComponent,
+    BaspageComponent,
+    NumberComponent,
+    RecherchemedecinComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
