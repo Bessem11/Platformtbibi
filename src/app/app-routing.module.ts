@@ -4,16 +4,10 @@ import {AccueilComponent} from './accueil/accueil.component';
 import {InscriptionComponent} from './inscription/inscription.component';
 import {FormulairemedecinComponent} from './auth/formulaire/formulairemedecin/formulairemedecin.component';
 import {FormulairepatientComponent} from './auth/formulaire/formulairepatient/formulairepatient.component';
-import {AccueilpatientComponent} from './accueilpatient/accueilpatient.component';
-import  {RecherchemedecinComponent} from './accueilpatient/recherchemedecin/recherchemedecin.component';
 
 
-const routes: Routes = [{path: 'accueil' , component: AccueilComponent },
-  {path: 'inscription', component: InscriptionComponent },
-  {path: 'formulairepatient', component: FormulairepatientComponent },
-  {path: 'formulairemedecin', component: FormulairemedecinComponent },
-  {path: 'accueilpatient', component: AccueilpatientComponent },
-  {path: 'recherchemedecin' , component: RecherchemedecinComponent }];
+const routes: Routes = [{path: 'accueil' , component: AccueilComponent },{path: 'inscription', component: InscriptionComponent },
+  {path: 'formulairepatient', component: FormulairepatientComponent },{path: 'formulairemedecin', component: FormulairemedecinComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
